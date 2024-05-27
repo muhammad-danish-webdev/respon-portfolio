@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(1.jpg);
+}
+
+:root{
+    --primary-color:#1f2937;
+    --secondary-color:#9ca3af;
+    --yellow-color:#f6d783;
+    --white-color:#ffff;
+    --sky-color:#42a2dd;
+}
+
+/* navbar starts here  */
+.navbar-section{
+    background-color: white;
+}
+.container{
+    padding: 0 50px;
+}
+
+/* navbar container  */
+.navbar-container{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+/* navbar logo  */
+.navbar-container .logo img{
+    height: 40px;
+}
+
+/* navbar list  */
+.navbar-list{
+    /* width: 900px; */
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-list ul{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-list ul li{
+    list-style: none;
+}
+
+.navbar-list ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    transition: all .3s ease;
+    border-radius: 5px;
+    min-width: max-content;
+}
+
+/* navbar hover  */
+.navbar-list ul li a:hover{
+    background-color: var(--sky-color);
+    color:var(--white-color);
+    cursor: pointer;
+
+}
+
+/* button container  */
+.button-container{
+    display: flex;
+    gap: 20px;
+    padding-right: 30px;
+}
+
+.light-btn,
+.dark-btn{
+    padding: 8px 16px;
+    /* font-size: 17px; */
+    border: none;
+    color: var(--secondary-color);
+    border-radius: 5px;
+    transition: all .3s ease;
+    width: max-content;
+}
+
+.dark-btn,
+.light-btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+    
+}
+
+.light-btn,
+.dark-btn:hover{
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.responsive-menu-btn{
+    display: none;
+}
+/*########## navbar ends here ########### */
+
+
+
+/* #########################  */
+/* hero section starts here  */
+/* #########################  */
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.content-section{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* content section H1  */
+.content-section h1{
+    font-size: 5rem;
+    color: #ffff;
+}
+
+/* content section span */
+.content-section span{
+    font-size: 8rem;
+    color: var(--yellow-color);
+}
+
+/* content section H4 */
+.content-section h4{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--white-color);
+    width: max-content;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+/* content section P */
+.content-section p{
+    color: #b1b1b1;
+    font-family:  Verdana, sans-serif;
+    font-size: 20px;
+}
+
+/* image section  */
+.image-section{
+    height: 400px;
+}
+.image-section img{
+    height: 100%;
+}
+/* #########################  */
+/* hero section ends here  */
+/* #########################  */
